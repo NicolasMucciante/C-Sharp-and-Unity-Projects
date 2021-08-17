@@ -11,16 +11,28 @@ namespace Method_submission_assignment_2
         static void Main(string[] args)
         {
             myClass Class = new myClass();
+            int y;
+            string yText;
 
             Console.WriteLine("Enter a number");
             int x = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter another number (Enter 0 for default (5))"); //It makes us enter an int so 0 will trigger the default
-            int y = Convert.ToInt32(Console.ReadLine());
-            
+            Console.WriteLine("Enter another number or enter for default");
+            yText = Console.ReadLine();
+
+            try
+            {
+                y = int.Parse(yText);
+            }
+            catch
+            {
+                Console.WriteLine("No input received using default 5");
+                y = 5;
+            }
 
             Console.WriteLine("The two numbers you entered added together equal: " + myClass.Addition(x, y));
-            Console.ReadLine();
+
+    Console.ReadLine();
         }
     }
 }

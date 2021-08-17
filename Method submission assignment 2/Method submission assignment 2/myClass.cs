@@ -10,10 +10,6 @@ namespace Method_submission_assignment_2
     {
         public static int Addition(int x, int y = 5)
         {
-            if (y == 0)
-            {
-                y = 5;
-            }
             int result = x + y;
             return result;
         }

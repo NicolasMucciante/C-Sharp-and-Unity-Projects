@@ -23,14 +23,13 @@ namespace Method_submission_assignment_2
             try
             {
                 y = int.Parse(yText);
+                Console.WriteLine("The two numbers you entered added together equal: " + myClass.Addition(x, y));
             }
             catch
             {
                 Console.WriteLine("No input received using default 5");
-                y = 5;
+                Console.WriteLine("The number you entered plus 5 is: " + myClass.Addition(x));
             }
-
-            Console.WriteLine("The two numbers you entered added together equal: " + myClass.Addition(x, y));
 
     Console.ReadLine();
         }

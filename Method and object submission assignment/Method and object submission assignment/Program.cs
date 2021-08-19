@@ -14,7 +14,7 @@ namespace Method_and_object_submission_assignment
             employee.FirstName = "Sample";
             employee.LastName = "Student";
 
-            Person.SayName(employee);
+            employee.SayName();
 
             Console.ReadLine();
         }

@@ -8,6 +8,6 @@ namespace Method_and_object_submission_assignment
 {
     public class Employee : Person
     {
-        public int Id { get; set; }
+        public int Id { get; set; }       
     }
 }

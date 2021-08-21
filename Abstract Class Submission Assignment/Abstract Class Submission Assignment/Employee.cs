@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace Abstract_Class_Submission_Assignment
 {
-    public class Employee : Person
+    public class Employee : Person, IQuittable
     {
         public void SayName()
         {
             Console.WriteLine("Name : " + firstName + " " + lastName);
+        }
+        public void Quit()
+        {
+            Console.WriteLine("It worked!");
         }
     }
 }
